@@ -1,6 +1,6 @@
 spring:
   application:
-    name: order_db
+    name: oms_orderservice
 
   datasource:
     url: jdbc:postgresql://localhost:5439/order_db
