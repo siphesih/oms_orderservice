@@ -1,3 +1,24 @@
 spring:
   application:
-    name: oms_orderservice
+    name: order_db
+
+  datasource:
+    url: jdbc:postgresql://localhost:5439/order_db
+    username: postgres
+    password: Siphesihle072?
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8081
+
+jwt:
+  secret: OMS_FNB_Super_Secret_Key_2026_Change_This_In_Production
+  expiration: 86400000
